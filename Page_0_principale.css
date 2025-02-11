@@ -1,0 +1,44 @@
+/*couleur de l'arrière plan*/
+body{
+    background-color: cornsilk;
+}
+
+/*pour l'entête*/
+.list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.lien{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: cadetblue;
+    font-weight: 700;
+}
+
+/*sous ligner le titre de la page actuelle*/
+.page0{
+    text-decoration: underline;
+}
+
+/*appenrence dynamique*/
+.page0:hover{
+    color: rgb(255, 162, 0);
+    border: 2px solid palevioletred;
+}
+
+.list:hover{
+    transition-property: 10s;
+    background-color: #fff;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    margin: auto;
+    text-align: justify;
+}

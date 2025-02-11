@@ -1,44 +1,77 @@
 /*couleur de l'arrière plan*/
 body{
-    background-color: cornsilk;
+    background-color: #fff;
 }
 
 /*pour l'entête*/
 .list{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 40px;
+    list-style: none; /*enlever le style de la liste*/
+    display: flex; /*placer les éléments sur une même ligne*/
+    gap: 50px; /*mettre un espace entre chaque lien*/
+    justify-content:end; /*pour centrer mes liens*/
+    padding: 20px; /*mettre de l'espace en heut et en bas*/
+    background-color: #424b54; /*couleur de font du bloc*/
+    flex-wrap: wrap; /*adaptation à différentes tailles d'écran*/
 }
 
-.lien{
+
+/*pour les liens*/
+.lien
+/*
+{
     position: relative;
     display: inline-block;
     text-decoration: none;
-    color: cadetblue;
-    font-weight: 700;
+    color: #fffafa;
+    background: transparent;
 }
 
-/*sous ligner le titre de la page actuelle*/
+/*pour sousligner le titre de la page actuelle
 .page0{
     text-decoration: underline;
-}
+}*/
 
-/*appenrence dynamique*/
-.page0:hover{
-    color: rgb(255, 162, 0);
-    border: 2px solid palevioletred;
-}
-
-.list:hover{
-    transition-property: 10s;
-    background-color: #fff;
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
-}
+/*appenrence dynamique
+.lien:hover{
+    text-decoration: underline;
+}*/
 
 ul{
     margin: auto;
     text-align: justify;
 }
+
+a{
+    text-align:justify;
+}
+
+.lien{
+    font-family: "Ubuntu Sans Mono", monospace;
+    color: #fffafa;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.co {
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 1px solid #fffafa;
+    border-radius: 50px;
+    font-family: "Ubuntu Sans Mono", monospace;
+    color: #fffafa;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 0 0 0;
+    transition: all 200ms;
+  }
+  
+  .co:hover{
+    transform: translateY(-10px);
+    box-shadow: 2px 6px 1px #fffafa;
+  }
+  
+  .co:active {
+    transform: translateY(10px);
+    box-shadow: 0 0 0;
+  }
+
